@@ -14,7 +14,6 @@ import javafx.scene.shape.Circle;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.shape.Shape;
 import javafx.util.Duration;
-
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
@@ -69,11 +68,8 @@ public class Controller implements Initializable {
 	}
 
 	private Shape createGameStructuralGrid() {
-
 		Shape rectangleWithHoles = new Rectangle((COLUMNS + 1) * CIRCLE_DIAMETER, (ROWS + 1) * CIRCLE_DIAMETER);
-
 		for (int row = 0; row < ROWS; row++) {
-
 			for (int col = 0; col < COLUMNS; col++) {
 				Circle circle = new Circle();
 				circle.setRadius(CIRCLE_DIAMETER / 2);
@@ -117,7 +113,6 @@ public class Controller implements Initializable {
 
 			rectangleList.add(rectangle);
 		}
-
 		return rectangleList;
 	}
 
@@ -272,9 +267,7 @@ public class Controller implements Initializable {
 			setCenterY(CIRCLE_DIAMETER/2);
 		}
 	}
-
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-
 	}
 }

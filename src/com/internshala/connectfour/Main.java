@@ -63,7 +63,7 @@ public class Main extends Application {
         Alert alert=new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("About Developer");
         alert.setHeaderText("Nishant Rohilla");
-        alert.setContentText("This game is developed by Mr.Nishant Rohilla in June 2021 by learning from Internshala Core Java Course");
+        alert.setContentText("This game is developed by Mr.Nishant Rohilla  by learning from Internshala Core Java Course");
         alert.show();
     }
 
@@ -74,14 +74,10 @@ public class Main extends Application {
         alert.setContentText("Connect Four is a two-player game in which the player who first connected 4 same coloured discs will win");
         alert.show();
     }
-
     private void exitgame() {
         Platform.exit();
         System.exit(0);
     }
-
-
-
     public static void main(String[] args) {
         launch(args);
     }
